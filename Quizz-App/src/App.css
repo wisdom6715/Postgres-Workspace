@@ -26,3 +26,17 @@ body{
   align-items: center;
   justify-content: center;
 }
+.scoreBoard{
+  background-color: white;
+  padding: 1rem 2rem;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+.completedBoard{
+  background-color: white;
+  padding: 1rem 2rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
