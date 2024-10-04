@@ -11,3 +11,18 @@ body{
   align-items: center;
   justify-content: center;
 }
+.formContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 60%;
+}
+.quizzContainer{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 30%;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+}
