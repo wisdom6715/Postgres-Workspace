@@ -7,7 +7,7 @@ const db = new pg.Client({
   user: "postgres",
   host: "localhost",
   database: "world",
-  password: "wisdom6715",
+  password: "wisdom6715!!@",
   port: 5432,
 })
 db.connect();
@@ -21,7 +21,7 @@ let quiz = [
   { country: "United States of America", capital: "New York" },
 ];
 // connecting postgres
-db.query('SELECT * FROM capitals()', (err, res) => {
+db.query('SELECT * FROM capitals', (err, res) => {
   if (err) {
     console.error('Error connecting to the database:', err.stack);
   } else {
