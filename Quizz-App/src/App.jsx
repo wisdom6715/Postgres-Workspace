@@ -16,12 +16,13 @@ function App() {
     console.log(formInput);
     if(formInput.toLowerCase() === selectedCountry.capital.toLowerCase()){
       setCountScore(5 * (score.current++))
-      // i want to increment the current score by multiplication by 2
+      // i want to increment the current score by multiplication by 5
     } else{
       alert('Game over');
       window.location.href = '/'
     }
   }
+
   const fetchCountries = async () => {
     const response = await axios.get('http://localhost:3000');
     // setCountries(response.data);
@@ -30,6 +31,7 @@ function App() {
 
     setNumberCompleted(completed.current++)
   }
+
   useEffect(() =>{
     const fetchCountries = async () => {
       const response = await axios.get('http://localhost:3000');
@@ -39,6 +41,7 @@ function App() {
     }
     fetchCountries();
   }, [])
+
   return (
     <>
       <div className='generalContainer'>
