@@ -15,11 +15,7 @@ db.connect();
 const app = express();
 const port = 3000;
 
-let quiz = [
-  { country: "France", capital: "Paris" },
-  { country: "United Kingdom", capital: "London" },
-  { country: "United States of America", capital: "New York" },
-];
+let quiz = [];
 // connecting postgres
 db.query('SELECT * FROM capitals', (err, res) => {
   if (err) {
